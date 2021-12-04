@@ -91,7 +91,7 @@ module.exports = {
       filename: './css/[name]-[contenthash].css',
     }),
     new HtmlWebpackPlugin({
-      template: './src/templates/index.pug',
+      template: './src/pug/index.pug',
       filename: 'index.html',
       inject: 'body',
     }),
