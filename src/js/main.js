@@ -1,1 +1,1 @@
-console.log('webpack!');
+import '../css/reset.scss';
