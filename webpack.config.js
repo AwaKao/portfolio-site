@@ -55,14 +55,14 @@ module.exports = {
               mozjpeg: {
                 progressive: true,
                 quality: 70,
-              }
+              },
             },
-          }
+          },
         ],
         type: 'asset/resource',
         generator: {
           filename: 'images/[name]-[contenthash][ext]',
-        }
+        },
       },
       {
         test: /\.(woff|woff2)/,
