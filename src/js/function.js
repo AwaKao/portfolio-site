@@ -48,5 +48,19 @@ export default () => {
         $('.contents, .contents__contact-section').addClass('is-fadein');
       },500);
     });
+
+    // contents => top
+    // PC
+    $('#ka_pc').on( "click", function() {
+      if ($('.contents__about-section, .contents__works-section, .contents__contact-section').hasClass('is-fadein')) {
+        $('.contents').removeClass('is-fadein');
+      }
+      setTimeout(function(){
+        $('#ka_pc').removeClass('pc-navi__ka-navi_contents').addClass('pc-navi__ka-navi_top');
+        $('#about_pc').removeClass('pc-navi__about-navi_contents').addClass('pc-navi__about-navi_top');
+        $('#works_pc').removeClass('pc-navi__works-navi_contents').addClass('pc-navi__works-navi_top');
+        $('#contact_pc').removeClass('pc-navi__contact-navi_contents').addClass('pc-navi__contact-navi_top');
+      },250);
+    });
   });
 }
