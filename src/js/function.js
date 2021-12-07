@@ -63,6 +63,36 @@ export default () => {
         $('.contents, .contents__contact-section').addClass('is-fadein');
       },500);
     });
+    //- / PC
+
+    // SP
+    $('#about_sp').on( "click", function() {
+      if ($('.contents__works-section, .contents__contact-section').hasClass('is-fadein')) {
+        $('.contents__works-section, .contents__contact-section').removeClass('is-fadein');
+      }
+      setTimeout(function(){
+        $('.contents, .contents__about-section').addClass('is-fadein');
+      },500);
+    });
+
+    $('#works_sp').on( "click", function() {
+      if ($('.contents__about-section, .contents__contact-section').hasClass('is-fadein')) {
+        $('.contents__about-section, .contents__contact-section').removeClass('is-fadein');
+      }
+      setTimeout(function(){
+        $('.contents, .contents__works-section').addClass('is-fadein');
+      },500);
+    });
+
+    $('#contact_sp').on( "click", function() {
+      if ($('.contents__about-section, .contents__works-section').hasClass('is-fadein')) {
+        $('.contents__about-section, .contents__works-section').removeClass('is-fadein');
+      }
+      setTimeout(function(){
+        $('.contents, .contents__contact-section').addClass('is-fadein');
+      },500);
+    });
+    //- / SP
 
     // contents => top
     // PC

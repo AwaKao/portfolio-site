@@ -427,19 +427,17 @@ html {
 
 //SP
 @media (max-width: 767px){
-  .pc-navi {
-    display: none;
-  }
-  .sp-navi {
-    display: block;
-    img {
-      max-width: initial;
-    }
-  }
   .container {
     min-width: initial;
     overflow: hidden;
+    .pc-navi {
+      display: none;
+    }
     .sp-navi {
+      display: block;
+      img {
+        max-width: initial;
+      }
       &__ka_sp {
         position: fixed;
         z-index: 5;
@@ -650,8 +648,22 @@ html {
         }
       }
     }
-  }
   .contents {
+    min-width: initial;
+    min-height: initial;
+    height: 70%;
+    &__about-section,
+    &__works-section,
+    &__contact-section {
+      height: 100%;
+      min-height: initial;
+      padding: 16px 0 36px;
+      overflow: hidden scroll;
+    }
+    .contents__heading {
+      font-size: 40px;
+      padding: 16px 0;
+    }
     &__flexbox {
       display: block;
       height: calc(100% - 92px);
@@ -672,26 +684,30 @@ html {
         }
       }
     }
-    &__works-section {
-      .contents__flexbox {
-        flex-direction: column;
-        height: calc(100% - 92px);
-        width: 80%;
-        overflow: auto;
-        .contents__link_work {
-          width: 100%;
-          height: auto;
-          margin: 0 0 28px;
-          &:last-child {
-            margin: 0;
+      &__works-section {
+        .contents__flexbox {
+          flex-direction: column;
+          height: calc(100% - 92px);
+          width: 80%;
+          overflow: auto;
+          .contents__link_work {
+            width: 100%;
+            height: auto;
+            margin: 0 0 28px;
+            .contents__link_work:nth-of-type(2) {
+              margin: 0px;
+            }
+            &:last-child {
+              margin: 0;
+            }
           }
         }
       }
-    }
-    &__link_mail {
-      font-size: 24px;
-      font-weight: 700;
-      margin: 16px 0 0;
+      &__link_mail {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 16px 0 0;
+      }
     }
   }
 }
