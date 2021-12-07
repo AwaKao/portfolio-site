@@ -20,12 +20,19 @@ export default () => {
     }
 
     // top=>navi animation
-    $('#about_pc, #works_pc, #contact_pc').on( "click", function() {
+    $('#about_pc, #works_pc, #contact_pc, #about_sp, #works_sp, #contact_sp').on( "click", function() {
       // PC
       $('#ka_pc').removeClass('pc-navi__ka-navi_top').addClass('pc-navi__ka-navi_contents');
       $('#about_pc').removeClass('pc-navi__about-navi_top').addClass('pc-navi__about-navi_contents');
       $('#works_pc').removeClass('pc-navi__works-navi_top').addClass('pc-navi__works-navi_contents');
       $('#contact_pc').removeClass('pc-navi__contact-navi_top').addClass('pc-navi__contact-navi_contents');
+      //- / PC
+
+      // SP
+      $('#about_sp').removeClass('sp-navi__about-navi_top').addClass('sp-navi__about-navi_contents');
+      $('#works_sp').removeClass('sp-navi__works-navi_top').addClass('sp-navi__works-navi_contents');
+      $('#contact_sp').removeClass('sp-navi__contact-navi_top').addClass('sp-navi__contact-navi_contents');
+      //- / SP
     });
 
     // top=>contents fade-in
