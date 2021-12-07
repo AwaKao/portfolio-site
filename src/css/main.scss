@@ -12,6 +12,9 @@ html {
   left: 0;
   z-index: -1;
 }
+.sp-navi {
+  display: none;
+}
 // PC
 .container {
   width: 100vw;
@@ -313,8 +316,8 @@ html {
         height: 312px;
       }
     }
-    // - ABOUT
-    // - CONTENS 共通
+    //-/ ABOUT
+    //-/ CONTENS 共通
 
     // WORKS
     &__works-section {
@@ -336,10 +339,10 @@ html {
       color: #444444;
       transform: translate(-50%, -50%);
     }
-    // - CONTACT
+    //-/ CONTACT
   }
 }
-// - PC
+//-/ PC
 
 // TABLET
 @media (max-width: 1080px){
@@ -420,5 +423,18 @@ html {
     }
   }
 }
-// - TABLET
+//-/ TABLET
 
+//SP
+// @media (max-width: 767px){
+//   .pc-navi {
+//     display: none;
+//   }
+//   .sp-navi {
+//     display: block;
+//     img {
+//       max-width: initial;
+//     }
+//   }
+// }
+//-/ SP
