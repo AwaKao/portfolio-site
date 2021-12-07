@@ -466,7 +466,7 @@ html {
         z-index: 5;
         border-radius: 50% 55% 61% 58%/80% 85% 72% 69%;
         transform: translate(50%,50%);
-        .sp-navi__ka-text_sp {
+        .sp-navi__ka-text {
           font-size: 24px;
           bottom: 10%;
           right: -50%;
@@ -484,7 +484,7 @@ html {
           right: -48%;
         }
       }
-      &__about_pc {
+      &__about_sp {
         position: fixed;
         z-index: 4;
         width: 142px;
@@ -539,7 +539,7 @@ html {
           left: 59%;
         }
       }
-      &__works_pc {
+      &__works_sp {
         position: fixed;
         z-index: 3;
         width: 150px;
@@ -594,7 +594,7 @@ html {
           left: 55%;
         }
       }
-      &__contact_pc {
+      &__contact_sp {
         position: fixed;
         z-index: 2;
         width: 162px;
