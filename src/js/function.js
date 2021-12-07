@@ -97,7 +97,7 @@ export default () => {
     // contents => top
     // PC
     $('#ka_pc').on( "click", function() {
-      if ($('.contents__about-section, .contents__works-section, .contents__contact-section').hasClass('is-fadein')) {
+      if ($('.contents').hasClass('is-fadein')) {
         $('.contents').removeClass('is-fadein');
       }
       setTimeout(function(){
@@ -107,5 +107,19 @@ export default () => {
         $('#contact_pc').removeClass('pc-navi__contact-navi_contents').addClass('pc-navi__contact-navi_top');
       },250);
     });
+    //- / PC
+
+    // SP
+    $('#ka_sp').on( "click", function() {
+      if ($('.contents').hasClass('is-fadein')) {
+        $('.contents').removeClass('is-fadein');
+      }
+      setTimeout(function(){
+        $('#about_sp').removeClass('sp-navi__about-navi_contents').addClass('sp-navi__about-navi_top');
+        $('#works_sp').removeClass('sp-navi__works-navi_contents').addClass('sp-navi__works-navi_top');
+        $('#contact_sp').removeClass('sp-navi__contact-navi_contents').addClass('sp-navi__contact-navi_top')
+      },250);
+    });
+    //- / SP
   });
 }
