@@ -12,7 +12,7 @@ html {
   left: 0;
   z-index: -1;
 }
-
+// PC
 .container {
   width: 100vw;
   height: 100vh;
@@ -231,6 +231,7 @@ html {
       }
     }
   }
+  // CONTENS 共通
   .contents {
     width: 92%;
     max-width: 1000px;
@@ -248,9 +249,15 @@ html {
     visibility: hidden;
     opacity: 0;
     transition: .3s;
+    .contents__link_work {
+      pointer-events: none;
+    }
     &.is-fadein {
       visibility: visible;
       opacity: 1;
+      .contents__link_work {
+        pointer-events: auto;
+      }
     }
     &__about-section,
     &__works-section,
@@ -279,6 +286,8 @@ html {
       text-align: center;
       padding: 40px 0;
     }
+
+    // ABOUT
     &__flexbox {
       display: flex;
       justify-content: space-between;
@@ -304,6 +313,10 @@ html {
         height: 312px;
       }
     }
+    // - ABOUT
+    // - CONTENS 共通
+
+    // WORKS
     &__works-section {
       .contents__flexbox {
         justify-content: center;
@@ -312,6 +325,9 @@ html {
         }
       }
     }
+      // - WORKS
+
+    // CONTACT
     &__link_mail {
       position: absolute;
       left: 50%;
@@ -320,5 +336,89 @@ html {
       color: #444444;
       transform: translate(-50%, -50%);
     }
+    // - CONTACT
   }
 }
+// - PC
+
+// TABLET
+@media (max-width: 1080px){
+  .container {
+    .pc-navi {
+      &__ka_pc {
+        width: 350px;
+        height: 250px;
+      }
+      &__ka-navi_loading {
+        .pc-navi__ka-text {
+          font-size: 60px;
+        }
+      }
+      &__ka-navi_top {
+        bottom: 0;
+        right: 170px;
+        .pc-navi__ka-text {
+          font-size: 60px;
+        }
+      }
+      &__ka-navi_contents {
+        .pc-navi__ka-text {
+          left: 50%;
+          font-size: 45px;
+        }
+      }
+      &__about_pc {
+        width: 300px;
+        height: 170px;
+        .pc-navi__about-text {
+          font-size: 60px;
+        }
+      }
+      &__about-navi_loading {
+        .pc-navi__about-text {
+          font-size: 60px;
+        }
+      }
+      &__about-navi_contents {
+        .pc-navi__about-text {
+          font-size: 20px;
+        }
+      }
+      &__works_pc {
+        width: 270px;
+        height: 310px;
+      }
+      &__works-navi_loading {
+        .pc-navi__works-text {
+          font-size: 60px;
+        }
+      }
+      &__works-navi_top {
+        top: 48%;
+        .pc-navi__works-text {
+          font-size: 60px;
+        }
+      }
+      &__works-navi_contents {
+        top: -100px;
+        left: 90px;
+      }
+      &__contact_pc {
+        width: 380px;
+        height: 220px;
+      }
+      &__contact-navi_loading {
+        .pc-navi__contact-text {
+          font-size: 60px;
+        }
+      }
+      &__contact-navi_top {
+        .pc-navi__contact-text {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+// - TABLET
+
