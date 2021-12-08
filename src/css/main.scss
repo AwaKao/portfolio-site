@@ -725,3 +725,24 @@ html {
   }
 }
 //-/ SP
+
+// iPhone SEナビ
+@media (max-width: 320px){
+  .container {
+    .sp-navi {
+      &__about-navi_contents {
+        top: 2%;
+        left: 11%;
+      }
+      &__works-navi_contents {
+        top: 1%;
+        left: 46%;
+      }
+      &__contact-navi_contents {
+        top: 2%;
+        left: 85%;
+      }
+    }
+  }
+}
+//-/ iPhone SEナビ
