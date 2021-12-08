@@ -262,10 +262,6 @@ html {
         pointer-events: auto;
       }
     }
-    &__about-section {
-      height: 700px;
-      overflow: hidden;
-    }
     &__about-section,
     &__works-section,
     &__contact-section {
@@ -279,6 +275,7 @@ html {
       visibility: hidden;
       opacity: 0;
       transition: .3s;
+      overflow: hidden;
     }
     &__about-section.is-fadein,
     &__works-section.is-fadein,
@@ -298,6 +295,9 @@ html {
     .flexbox-wrapper {
       height: 400px;
       overflow: auto;
+      .contents__flexbox:nth-of-type(2) {
+        margin: 40px auto 0;
+      }
     }
 
     &__flexbox {
@@ -322,7 +322,6 @@ html {
       }
       .contents__right-block {
         width: 40%;
-        height: 312px;
       }
     }
     //-/ ABOUT
@@ -332,6 +331,9 @@ html {
     &__works-section {
       .contents__flexbox {
         justify-content: center;
+        .contents__link_work {
+          font-size: initial;
+        }
         .contents__link_work:nth-of-type(2) {
           margin: 0 28px;
         }
@@ -664,11 +666,8 @@ html {
     .flexbox-wrapper {
       overflow: auto;
       height: calc(100% - 96px);
-      .contents__flexbox:nth-of-type(1) {
-        margin: 0 0 50px;
-      }
       .contents__flexbox:nth-of-type(2) {
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
       }
     }
     &__about-section,
@@ -683,7 +682,7 @@ html {
       padding: 16px 0;
     }
     &__flexbox {
-      display: block;
+      flex-direction: column;
       width: 100%;
       padding: 0 32px;
       .contents__right-block,
@@ -702,6 +701,7 @@ html {
     }
       &__works-section {
         .contents__flexbox {
+          justify-content: flex-start;
           flex-direction: column;
           height: calc(100% - 92px);
           width: 80%;
@@ -709,10 +709,9 @@ html {
           .contents__link_work {
             width: 100%;
             height: auto;
-            margin: 0 0 28px;
           }
           .contents__link_work:nth-of-type(2) {
-            margin: 0 0 28px;
+            margin: 28px 0;
           }
         }
       }
