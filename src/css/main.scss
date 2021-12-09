@@ -342,13 +342,14 @@ html {
       // - WORKS
 
     // CONTACT
-    &__link_mail {
-      position: absolute;
-      left: 50%;
-      font-size: 32px;
-      font-weight: 500;
-      color: #444444;
-      transform: translate(-50%, -50%);
+    &__contact-section {
+      .contents__links {
+        display: flex;
+        justify-content: center;
+        .contents__link {
+          margin: 0 20px;
+        }
+      }
     }
     //-/ CONTACT
   }
@@ -715,10 +716,15 @@ html {
           }
         }
       }
-      &__link_mail {
-        font-size: 24px;
-        font-weight: 700;
-        margin: 16px 0 0;
+      &__contact-section {
+        .contents__links {
+          .contents__link {
+            font-size: 16px;
+            img {
+              width: 48px;
+            }
+          }
+        }
       }
     }
   }

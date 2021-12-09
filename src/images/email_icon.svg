@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="letter-part1" width="24" height="16" transform="translate(580 409)" fill="#eee"/>
+    </clipPath>
+  </defs>
+  <g id="email-icon" transform="translate(-568 -393)">
+    <rect id="background" width="48" height="48" transform="translate(568 393)" fill="none"/>
+    <circle id="circle" cx="24" cy="24" r="24" transform="translate(568 393)" fill="#222"/>
+    <rect id="letter-part1-2" data-name="letter-part1" width="24" height="16" transform="translate(580 409)" fill="#eee"/>
+    <g id="マスクグループ_1" data-name="マスクグループ 1" clip-path="url(#clip-path)">
+      <path id="letter-part2" d="M582,413l18,12,18-12" transform="translate(-8 -8)" fill="none" stroke="#222" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
