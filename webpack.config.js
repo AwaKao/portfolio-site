@@ -102,5 +102,9 @@ module.exports = {
       prefix: '',
       mode: 'light',
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
   ],
 }
