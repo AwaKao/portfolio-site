@@ -1,23 +1,20 @@
 export default () => {
-  $(function() {
-    // loading=>top animation
-    window.onload = function() {
-      setTimeout(function(){
-        // PC
-        $('#ka_pc').removeClass('pc-navi__ka-navi_loading').addClass('pc-navi__ka-navi_top');
-        $('#about_pc').removeClass('pc-navi__about-navi_loading').addClass('pc-navi__about-navi_top');
-        $('#works_pc').removeClass('pc-navi__works-navi_loading').addClass('pc-navi__works-navi_top');
-        $('#contact_pc').removeClass('pc-navi__contact-navi_loading').addClass('pc-navi__contact-navi_top');
-        //- / PC
+  jQuery(function() {
+    setTimeout(function(){
+      // PC
+      $('#ka_pc').removeClass('pc-navi__ka-navi_loading').addClass('pc-navi__ka-navi_top');
+      $('#about_pc').removeClass('pc-navi__about-navi_loading').addClass('pc-navi__about-navi_top');
+      $('#works_pc').removeClass('pc-navi__works-navi_loading').addClass('pc-navi__works-navi_top');
+      $('#contact_pc').removeClass('pc-navi__contact-navi_loading').addClass('pc-navi__contact-navi_top');
+      //- / PC
 
-        // SP
-        $('#ka_sp').removeClass('sp-navi__ka-navi_loading').addClass('sp-navi__ka-navi_top');
-        $('#about_sp').removeClass('sp-navi__about-navi_loading').addClass('sp-navi__about-navi_top');
-        $('#works_sp').removeClass('sp-navi__works-navi_loading').addClass('sp-navi__works-navi_top');
-        $('#contact_sp').removeClass('sp-navi__contact-navi_loading').addClass('sp-navi__contact-navi_top');
-        //- / SP
-      },1500);
-    }
+      // SP
+      $('#ka_sp').removeClass('sp-navi__ka-navi_loading').addClass('sp-navi__ka-navi_top');
+      $('#about_sp').removeClass('sp-navi__about-navi_loading').addClass('sp-navi__about-navi_top');
+      $('#works_sp').removeClass('sp-navi__works-navi_loading').addClass('sp-navi__works-navi_top');
+      $('#contact_sp').removeClass('sp-navi__contact-navi_loading').addClass('sp-navi__contact-navi_top');
+      //- / SP
+    },1500);
 
     // top=>navi animation
     $('#about_pc, #works_pc, #contact_pc, #about_sp, #works_sp, #contact_sp').on( "click", function() {
